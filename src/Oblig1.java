@@ -160,16 +160,20 @@ public class Oblig1 {
     public static void delsortering(int[] a)
     {
         int v = 0, h = a.length - 1;
-        while( v < a.length && (a[v] & 1) != 0) v++; // finner oddetall fra v
-        while(h >= 0 && (a[h] & 1) == 0) h--;        // finenr partall fra h
+        while( v < a.length && (a[v] & 1) != 0) v++; 
+        // looper til vi finner oddetall fra v
+        while(h >= 0 && (a[h] & 1) == 0) h--;        
+        // looper til vi finner partall fra h
+        
     while(true)
     {
         if(v < h) bytt(a,v++,h--); else break;
+        // bytter plass på odetall og partall
         while((a[v] & 1) != 0) v++;
         while((a[h] & 1) == 0) h--;
     }
     Arrays.sort(a, 0, v); // sorterer oddetall på venstre side
-    Arrays.sort(a, v, a.length);
+    Arrays.sort(a, v, a.length); // sorterer partall på høyreside
     
              
             
