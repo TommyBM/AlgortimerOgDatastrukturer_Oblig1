@@ -180,6 +180,7 @@ public class Oblig1 {
     //Test        
     }
    java tester tester
+   java tester 2
     }
     
 
