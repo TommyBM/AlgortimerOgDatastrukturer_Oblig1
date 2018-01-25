@@ -8,6 +8,7 @@
  *
  * @author Paranoid
  */
+
 import java.util.Arrays;
 import java.util.NoSuchElementException;
 public class Oblig1 {
@@ -174,11 +175,11 @@ public class Oblig1 {
     }
     Arrays.sort(a, 0, v); // sorterer oddetall på venstre side
     Arrays.sort(a, v, a.length); // sorterer partall på høyreside
-    
-             
-            
+                asdasdasd
+                ny linje
+    //Test        
     }
-   
+   java tester tester
     }
     
 
