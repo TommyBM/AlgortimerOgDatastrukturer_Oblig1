@@ -175,12 +175,28 @@ public class Oblig1 {
     }
     Arrays.sort(a, 0, v); // sorterer oddetall på venstre side
     Arrays.sort(a, v, a.length); // sorterer partall på høyreside
-                asdasdasd
-                ny linje
-    //Test        
+  
     }
-   java tester tester
-   java tester 2
+    // Oppgave 5
+    /* 
+    Metoden skal "rotere" innholdet i char tabellen a
+    en enhet.
+    */
+    public static void rotasjon(char[] a)
+    {
+    if(a.length > 1)
+    {
+        char temp = a[a.length - 1]; // siste verdi i tabeleln
+        for(int i = a.length - 1; i > 0; i--)
+        {
+            a[i] = a[i - 1]; // siste og nest siste bytter
+        }
+        a[0] = temp; // siste verdi flyttes fremst
+        
+    }
+    }
+    
+    
     }
     
 
